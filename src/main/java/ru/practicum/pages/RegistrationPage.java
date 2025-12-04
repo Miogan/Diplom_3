@@ -1,0 +1,69 @@
+package ru.practicum.pages;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static ru.practicum.pages.LoginPage.LOGIN_PAGE_ADDRESS;
+
+public class RegistrationPage {
+    private final WebDriver driver;
+    private final WebDriverWait wait;
+    public static final String REGISTRATION_PAGE_ADDRESS = "https://stellarburgers.education-services.ru/register";
+    // Поля
+    private static final By LOCATOR_NAME_FIELD = By.cssSelector("input[name='name']");
+    private static final By LOCATOR_EMAIL_FIELD = By.xpath("//label[contains(text(),'Email')]/../input");
+    private static final By LOCATOR_PASSWORD_FIELD = By.cssSelector("input[name='Пароль']");
+    private static final By LOCATOR_BUTTON_REGISTRATION = By.cssSelector("button.button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_medium__3zxIa");
+    private static final By LOCATOR_ANY_ERROR = By.cssSelector("p.input__error.text_type_main-default");
+    private static final By LOCATOR_LINK_LOGIN = By.cssSelector("a.Auth_link__1fOlj[href*='login']");
+    private static final String TEXTERRORPASSWORD = "Некорректный пароль";
+
+    public RegistrationPage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
+    // Открываем  страницу регистрации
+    public void openRegPage() {
+        driver.get(REGISTRATION_PAGE_ADDRESS);
+    }
+    // Заполняем форму регистрации
+    public void fillingInUserName(String name) {
+        driver.findElement(LOCATOR_NAME_FIELD).sendKeys(name);
+    }
+
+    public void fillingInUserEmail(String email) {
+        driver.findElement(LOCATOR_EMAIL_FIELD).sendKeys(email);
+    }
+
+    public void fillingInUserPassword(String password) {
+        driver.findElement(LOCATOR_PASSWORD_FIELD).sendKeys(password);
+    }
+
+    public void getErrorMessageText() {
+        // Ждем появления ошибки
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.presenceOfElementLocated(LOCATOR_ANY_ERROR));
+        String textWinOrder = driver.findElement(LOCATOR_ANY_ERROR).getText();
+        assertTrue("Некорректный пароль", textWinOrder.contains(TEXTERRORPASSWORD));
+    }
+
+    // Нажимаем кнопку "Зарегистрироваться"
+    public void clickButtonRegistration() {
+        driver.findElement(LOCATOR_BUTTON_REGISTRATION).click();
+    }
+
+    public void clickLinkLogin() {
+        driver.findElement(LOCATOR_LINK_LOGIN).click();
+        wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
+
+    }
+}
