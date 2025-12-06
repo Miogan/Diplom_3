@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import ru.practicum.pages.HomePage;
+import pages.HomePage;
 
 @Epic("Вкладки")
 @Feature("Активные вкладки")

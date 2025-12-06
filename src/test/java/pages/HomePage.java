@@ -1,4 +1,4 @@
-package ru.practicum.pages;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 import io.qameta.allure.Step;
-import static ru.practicum.pages.LoginPage.LOGIN_PAGE_ADDRESS;
+import static pages.LoginPage.LOGIN_PAGE_ADDRESS;
 
 public class HomePage {
     private final WebDriver driver;

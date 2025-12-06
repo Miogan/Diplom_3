@@ -7,10 +7,10 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import ru.practicum.pages.HomePage;
-import ru.practicum.pages.LoginPage;
-import ru.practicum.pages.RecoveryPassPage;
-import ru.practicum.pages.RegistrationPage;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.RecoveryPassPage;
+import pages.RegistrationPage;
 
 @Epic("Авторизация")
 @Feature("Проверка авторизации с разных страниц")

@@ -7,7 +7,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import ru.practicum.pages.RegistrationPage;
+import pages.RegistrationPage;
 
 @Epic("Авторизация")
 @Feature("Проверка процесса авторизации с некоррекными данными")
@@ -34,6 +34,6 @@ public class RegistrationUserTest {
         regPage.fillingInUserEmail(email);
         regPage.fillingInUserPassword(password);
         regPage.clickButtonRegistration();
-        regPage.getErrorMessageText();
+        regPage.checkPasswordError();
     }
 }

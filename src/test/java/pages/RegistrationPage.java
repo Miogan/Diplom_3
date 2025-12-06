@@ -1,10 +1,9 @@
-package ru.practicum.pages;
+package pages;
 
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,7 +11,7 @@ import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static ru.practicum.pages.LoginPage.LOGIN_PAGE_ADDRESS;
+import static pages.LoginPage.LOGIN_PAGE_ADDRESS;
 
 public class RegistrationPage {
     private final WebDriver driver;
@@ -53,13 +52,11 @@ public class RegistrationPage {
         driver.findElement(LOCATOR_PASSWORD_FIELD).sendKeys(password);
     }
 
+    // Метод для проверки ошибки пароля
     @Step("Проверка корректности текста ошибки")
-    public void getErrorMessageText() {
-        // Ждем появления ошибки
-        new WebDriverWait(driver, Duration.ofSeconds(5))
-                .until(ExpectedConditions.presenceOfElementLocated(LOCATOR_ANY_ERROR));
-        String textWinOrder = driver.findElement(LOCATOR_ANY_ERROR).getText();
-        assertTrue("Некорректный пароль", textWinOrder.contains(TEXTERRORPASSWORD));
+    public void checkPasswordError() {
+        String errorText = getErrorMessageText();
+        assertTrue("Некорректный пароль", errorText.contains(TEXTERRORPASSWORD));
     }
 
     // Нажимаем кнопку "Зарегистрироваться"
@@ -73,5 +70,10 @@ public class RegistrationPage {
         driver.findElement(LOCATOR_LINK_LOGIN).click();
         wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
 
+    }
+    public String getErrorMessageText() {
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.presenceOfElementLocated(LOCATOR_ANY_ERROR));
+        return driver.findElement(LOCATOR_ANY_ERROR).getText();
     }
 }

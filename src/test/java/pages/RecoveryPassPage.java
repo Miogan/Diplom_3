@@ -1,4 +1,4 @@
-package ru.practicum.pages;
+package pages;
 
 
 import io.qameta.allure.Step;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static ru.practicum.pages.LoginPage.LOGIN_PAGE_ADDRESS;
+import static pages.LoginPage.LOGIN_PAGE_ADDRESS;
 
 public class RecoveryPassPage {
     private final WebDriver driver;
