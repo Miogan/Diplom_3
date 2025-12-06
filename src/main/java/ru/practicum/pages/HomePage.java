@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static org.junit.Assert.assertTrue;
+import io.qameta.allure.Step;
 import static ru.practicum.pages.LoginPage.LOGIN_PAGE_ADDRESS;
 
 public class HomePage {
@@ -31,29 +31,35 @@ public class HomePage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    @Step("Открытие стартовой страницы")
     public void openHomePage() {
         driver.get(HOME_PAGE_ADDRESS);
     }
 
+    @Step("Клик по ссылке Личный кабинет")
     public void clickLinkPersonalAccount() {
         driver.findElement(LOCATOR_LINK_PERSONAL_ACCOUNT).click();
         wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
 
     }
 
+    @Step("Клик по кнопке Войти в аккаунт")
     public void clickButtonLoginToAccount() {
         driver.findElement(LOCATOR_BUTTON_LOGIN_TO_ACCOUNT).click();
         wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
     }
 
+    @Step("Клик по вкладке Соусы")
     public void clickSaucesSection() {
         driver.findElement(LOCATOR_SAUCES_SECTION).click();
     }
 
+    @Step("Клик по вкладке Начинки")
     public void clickFillingsSection() {
         driver.findElement(LOCATOR_FILLINGS_SECTION).click();
     }
 
+    @Step("Находим имя активного раздела")
     public String getActiveSectionText() {
         try {
             WebElement activeSection = driver.findElement(LOCATOR_ACTIVE_SECTION);

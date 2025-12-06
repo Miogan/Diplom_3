@@ -1,5 +1,6 @@
 package ru.practicum.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,16 +26,22 @@ public class LoginPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    @Step("Открытие страницы авторизации")
     public void openLogPage() {
         driver.get(LOGIN_PAGE_ADDRESS);
     }
+
+    @Step("Ввод электронной почты")
     public void fillingInUserEmail(String email) {
         driver.findElement(LOCATOR_EMAIL_FIELD).sendKeys(email);
     }
 
+    @Step("Ввод пароля")
     public void fillingInUserPassword(String password) {
         driver.findElement(LOCATOR_PASSWORD_FIELD).sendKeys(password);
     }
+
+    @Step("Клик по кнопке авторизации")
     public void clickButtonLogin() {
         driver.findElement(LOCATOR_LOGIN_BUTTON).click();
         wait.until(ExpectedConditions.urlToBe(HOME_PAGE_ADDRESS));

@@ -1,6 +1,7 @@
 package ru.practicum.pages;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,22 +33,27 @@ public class RegistrationPage {
     }
 
     // Открываем  страницу регистрации
+    @Step("Открытие страницы регистрации")
     public void openRegPage() {
         driver.get(REGISTRATION_PAGE_ADDRESS);
     }
     // Заполняем форму регистрации
+    @Step("Заполнение поля Имя")
     public void fillingInUserName(String name) {
         driver.findElement(LOCATOR_NAME_FIELD).sendKeys(name);
     }
 
+    @Step("Заполнение поля электронной почты")
     public void fillingInUserEmail(String email) {
         driver.findElement(LOCATOR_EMAIL_FIELD).sendKeys(email);
     }
 
+    @Step("Заполнение поля пароля")
     public void fillingInUserPassword(String password) {
         driver.findElement(LOCATOR_PASSWORD_FIELD).sendKeys(password);
     }
 
+    @Step("Проверка корректности текста ошибки")
     public void getErrorMessageText() {
         // Ждем появления ошибки
         new WebDriverWait(driver, Duration.ofSeconds(5))
@@ -57,10 +63,12 @@ public class RegistrationPage {
     }
 
     // Нажимаем кнопку "Зарегистрироваться"
+    @Step("Клик по кнопке регистрации")
     public void clickButtonRegistration() {
         driver.findElement(LOCATOR_BUTTON_REGISTRATION).click();
     }
 
+    @Step("Заполнение по ссылке авторизации")
     public void clickLinkLogin() {
         driver.findElement(LOCATOR_LINK_LOGIN).click();
         wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));

@@ -1,6 +1,7 @@
 package ru.practicum.pages;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,10 +22,12 @@ public class RecoveryPassPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    @Step("Открытие страницы восстановления пароля")
     public void openRecoveryPage() {
         driver.get(RECOVERY_PAGE_ADDRESS);
     }
 
+    @Step("Клик по ссылке войти")
     public void clickButtonLoginAccount() {
         driver.findElement(LOCATOR_LINK_LOGIN_TO_ACCOUNT).click();
         wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
