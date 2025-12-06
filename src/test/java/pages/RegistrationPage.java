@@ -11,7 +11,7 @@ import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static pages.LoginPage.LOGIN_PAGE_ADDRESS;
+import static pages.HomePage.HOME_PAGE_ADDRESS;
 
 public class RegistrationPage {
     private final WebDriver driver;
@@ -63,12 +63,15 @@ public class RegistrationPage {
     @Step("Клик по кнопке регистрации")
     public void clickButtonRegistration() {
         driver.findElement(LOCATOR_BUTTON_REGISTRATION).click();
+        String actualUrl = driver.getCurrentUrl();
+        assertEquals("После авторизации пользователь переходит не на домашнюю страницу", HOME_PAGE_ADDRESS, actualUrl);
     }
 
-    @Step("Заполнение по ссылке авторизации")
+    @Step("Клик по ссылке авторизации")
     public void clickLinkLogin() {
         driver.findElement(LOCATOR_LINK_LOGIN).click();
-        wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
+        String actualUrl = driver.getCurrentUrl();
+        assertEquals("После авторизации пользователь не переходит на домашнюю страницу", HOME_PAGE_ADDRESS, actualUrl);
 
     }
     public String getErrorMessageText() {
