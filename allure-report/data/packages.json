@@ -1,0 +1,129 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "ru.practicum",
+    "children" : [ {
+      "name" : "testActiveSectionFillings",
+      "uid" : "5e287678ba868069",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142406098,
+        "stop" : 1765142409947,
+        "duration" : 3849
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testActiveSectionSauces",
+      "uid" : "9e46bf7d3768234f",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142410101,
+        "stop" : 1765142412189,
+        "duration" : 2088
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testActiveSectionBuns",
+      "uid" : "b9372e9f521eef0f",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142412198,
+        "stop" : 1765142414252,
+        "duration" : 2054
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginPersonalAccountPage",
+      "uid" : "bc5aef40aa8abb35",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142414275,
+        "stop" : 1765142421631,
+        "duration" : 7356
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginRecoveryPassPage",
+      "uid" : "8aea516291db9a7b",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142421637,
+        "stop" : 1765142425002,
+        "duration" : 3365
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginRegFormPage",
+      "uid" : "7e278d408a834cf6",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142425009,
+        "stop" : 1765142428364,
+        "duration" : 3355
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginHomePage",
+      "uid" : "66c0901ddc3382b7",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142428369,
+        "stop" : 1765142431389,
+        "duration" : 3020
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testNonFoundAFieldsRegForm[Имя: Qzrs0Ci, Емэил 1765142431403@mail.ru, Пароль: xJiX56]",
+      "uid" : "77bc02efb92c7941",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142431416,
+        "stop" : 1765142434263,
+        "duration" : 2847
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testNonFoundAFieldsRegForm[Имя: ioZE1Mh, Емэил 1765142431404@gmail.ru, Пароль: QQgfra]",
+      "uid" : "2570a7b14a55b398",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142434267,
+        "stop" : 1765142437342,
+        "duration" : 3075
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testShortPasswordErrorMessage",
+      "uid" : "25dc8cb3e27387a5",
+      "parentUid" : "735b6944536e8d6623e046975961835b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1765142437350,
+        "stop" : 1765142439657,
+        "duration" : 2307
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ru.practicum"
+  } ]
+}

@@ -1,0 +1,133 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-0Q0VPUNE",
+    "children" : [ {
+      "name" : "16028@LAPTOP-0Q0VPUNE.main(1)",
+      "children" : [ {
+        "name" : "Registration user with uncorrect pass",
+        "uid" : "25dc8cb3e27387a5",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142437350,
+          "stop" : 1765142439657,
+          "duration" : 2307
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login from registration page registration",
+        "uid" : "7e278d408a834cf6",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142425009,
+          "stop" : 1765142428364,
+          "duration" : 3355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login from home page personal account",
+        "uid" : "bc5aef40aa8abb35",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142414275,
+          "stop" : 1765142421631,
+          "duration" : 7356
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login user with correct data",
+        "uid" : "77bc02efb92c7941",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142431416,
+          "stop" : 1765142434263,
+          "duration" : 2847
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Active section buns",
+        "uid" : "b9372e9f521eef0f",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142412198,
+          "stop" : 1765142414252,
+          "duration" : 2054
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login from recovery page personal account",
+        "uid" : "8aea516291db9a7b",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142421637,
+          "stop" : 1765142425002,
+          "duration" : 3365
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login home page",
+        "uid" : "66c0901ddc3382b7",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142428369,
+          "stop" : 1765142431389,
+          "duration" : 3020
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Active section fillings",
+        "uid" : "5e287678ba868069",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142406098,
+          "stop" : 1765142409947,
+          "duration" : 3849
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login user with correct data",
+        "uid" : "2570a7b14a55b398",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142434267,
+          "stop" : 1765142437342,
+          "duration" : 3075
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Active section sauces",
+        "uid" : "9e46bf7d3768234f",
+        "parentUid" : "6dad22d5ffe6262564909931bc42e920",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142410101,
+          "stop" : 1765142412189,
+          "duration" : 2088
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6dad22d5ffe6262564909931bc42e920"
+    } ],
+    "uid" : "2b694338cc994445ea0d4766cd8a9deb"
+  } ]
+}

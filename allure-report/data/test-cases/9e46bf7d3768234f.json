@@ -1,0 +1,119 @@
+{
+  "uid" : "9e46bf7d3768234f",
+  "name" : "Active section sauces",
+  "fullName" : "ru.practicum.ActiveSectionTest.testActiveSectionSauces",
+  "historyId" : "a1197a85fa4836ca307849ea93314375",
+  "time" : {
+    "start" : 1765142410101,
+    "stop" : 1765142412189,
+    "duration" : 2088
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открытие стартовой страницы",
+      "time" : {
+        "start" : 1765142411137,
+        "stop" : 1765142411874,
+        "duration" : 737
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по вкладке Соусы",
+      "time" : {
+        "start" : 1765142411875,
+        "stop" : 1765142411968,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Находим имя активного раздела",
+      "time" : {
+        "start" : 1765142411968,
+        "stop" : 1765142412013,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.practicum"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.practicum.ActiveSectionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testActiveSectionSauces"
+  }, {
+    "name" : "suite",
+    "value" : "ru.practicum.ActiveSectionTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0Q0VPUNE"
+  }, {
+    "name" : "thread",
+    "value" : "16028@LAPTOP-0Q0VPUNE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Активная вкладка соусов"
+  }, {
+    "name" : "epic",
+    "value" : "Вкладки"
+  }, {
+    "name" : "feature",
+    "value" : "Активные вкладки"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e46bf7d3768234f.json",
+  "parameterValues" : [ ]
+}

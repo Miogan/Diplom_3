@@ -12,6 +12,7 @@ import java.time.Duration;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pages.HomePage.HOME_PAGE_ADDRESS;
+import static pages.LoginPage.LOGIN_PAGE_ADDRESS;
 
 public class RegistrationPage {
     private final WebDriver driver;
@@ -23,7 +24,8 @@ public class RegistrationPage {
     private static final By LOCATOR_PASSWORD_FIELD = By.cssSelector("input[name='Пароль']");
     private static final By LOCATOR_BUTTON_REGISTRATION = By.cssSelector("button.button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_medium__3zxIa");
     private static final By LOCATOR_ANY_ERROR = By.cssSelector("p.input__error.text_type_main-default");
-    private static final By LOCATOR_LINK_LOGIN = By.cssSelector("a.Auth_link__1fOlj[href*='login']");
+    //private static final By LOCATOR_LINK_LOGIN = By.cssSelector("a.Auth_link__1fOlj[href*='login']");
+    private static final By LOCATOR_LINK_LOGIN = By.cssSelector("a.Auth_link__1fOlj");
     private static final String TEXTERRORPASSWORD = "Некорректный пароль";
 
     public RegistrationPage(WebDriver driver) {
@@ -61,17 +63,27 @@ public class RegistrationPage {
 
     // Нажимаем кнопку "Зарегистрироваться"
     @Step("Клик по кнопке регистрации")
-    public void clickButtonRegistration() {
+    public void clickButtonRegistrationUncorrectPass() {
         driver.findElement(LOCATOR_BUTTON_REGISTRATION).click();
         String actualUrl = driver.getCurrentUrl();
-        assertEquals("После авторизации пользователь переходит не на домашнюю страницу", HOME_PAGE_ADDRESS, actualUrl);
+        wait.until(ExpectedConditions.urlToBe(REGISTRATION_PAGE_ADDRESS));
+        assertEquals("После неуспешной авторизации пользователь не остался на странице регистрации", REGISTRATION_PAGE_ADDRESS, actualUrl);
+    }
+
+    @Step("Клик по кнопке регистрации")
+    public void clickButtonRegistration() {
+        driver.findElement(LOCATOR_BUTTON_REGISTRATION).click();
+        wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
+        String actualUrl = driver.getCurrentUrl();
+        assertEquals("!После регистрации пользователь переходит не на страницу авторизации", LOGIN_PAGE_ADDRESS, actualUrl);
     }
 
     @Step("Клик по ссылке авторизации")
     public void clickLinkLogin() {
         driver.findElement(LOCATOR_LINK_LOGIN).click();
+        wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_ADDRESS));
         String actualUrl = driver.getCurrentUrl();
-        assertEquals("После авторизации пользователь не переходит на домашнюю страницу", HOME_PAGE_ADDRESS, actualUrl);
+        assertEquals("При попытке войти через страницу регистрации открывается не страница авторизации", LOGIN_PAGE_ADDRESS, actualUrl);
 
     }
     public String getErrorMessageText() {

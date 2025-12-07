@@ -1,0 +1,119 @@
+{
+  "uid" : "5e287678ba868069",
+  "name" : "Active section fillings",
+  "fullName" : "ru.practicum.ActiveSectionTest.testActiveSectionFillings",
+  "historyId" : "254658c4c973a4ffa3dd5e8e99c921fd",
+  "time" : {
+    "start" : 1765142406098,
+    "stop" : 1765142409947,
+    "duration" : 3849
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открытие стартовой страницы",
+      "time" : {
+        "start" : 1765142408479,
+        "stop" : 1765142409251,
+        "duration" : 772
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по вкладке Начинки",
+      "time" : {
+        "start" : 1765142409252,
+        "stop" : 1765142409678,
+        "duration" : 426
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Находим имя активного раздела",
+      "time" : {
+        "start" : 1765142409678,
+        "stop" : 1765142409728,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.practicum"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.practicum.ActiveSectionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testActiveSectionFillings"
+  }, {
+    "name" : "suite",
+    "value" : "ru.practicum.ActiveSectionTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0Q0VPUNE"
+  }, {
+    "name" : "thread",
+    "value" : "16028@LAPTOP-0Q0VPUNE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Активная вкладка начинок"
+  }, {
+    "name" : "epic",
+    "value" : "Вкладки"
+  }, {
+    "name" : "feature",
+    "value" : "Активные вкладки"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5e287678ba868069.json",
+  "parameterValues" : [ ]
+}

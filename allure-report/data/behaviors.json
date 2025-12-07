@@ -1,0 +1,301 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Вкладки",
+    "children" : [ {
+      "name" : "Активная вкладка начинок",
+      "children" : [ {
+        "name" : "Active section fillings",
+        "uid" : "5e287678ba868069",
+        "parentUid" : "f5f02655f5eb0042e804ab30c99849e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142406098,
+          "stop" : 1765142409947,
+          "duration" : 3849
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f5f02655f5eb0042e804ab30c99849e8"
+    }, {
+      "name" : "Активные вкладки",
+      "children" : [ {
+        "name" : "Active section fillings",
+        "uid" : "5e287678ba868069",
+        "parentUid" : "3da383eaf8731a993a6e902996d691d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142406098,
+          "stop" : 1765142409947,
+          "duration" : 3849
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Active section sauces",
+        "uid" : "9e46bf7d3768234f",
+        "parentUid" : "3da383eaf8731a993a6e902996d691d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142410101,
+          "stop" : 1765142412189,
+          "duration" : 2088
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Active section buns",
+        "uid" : "b9372e9f521eef0f",
+        "parentUid" : "3da383eaf8731a993a6e902996d691d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142412198,
+          "stop" : 1765142414252,
+          "duration" : 2054
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3da383eaf8731a993a6e902996d691d4"
+    }, {
+      "name" : "Активная вкладка соусов",
+      "children" : [ {
+        "name" : "Active section sauces",
+        "uid" : "9e46bf7d3768234f",
+        "parentUid" : "679b17d6e51ee61869efa13381b3b092",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142410101,
+          "stop" : 1765142412189,
+          "duration" : 2088
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "679b17d6e51ee61869efa13381b3b092"
+    }, {
+      "name" : "Активная вкладка булочек",
+      "children" : [ {
+        "name" : "Active section buns",
+        "uid" : "b9372e9f521eef0f",
+        "parentUid" : "6cd8982db9bb64ae07c786785e78679e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142412198,
+          "stop" : 1765142414252,
+          "duration" : 2054
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6cd8982db9bb64ae07c786785e78679e"
+    } ],
+    "uid" : "a2e27da16e4b0160ea5c67d66ee55a52"
+  }, {
+    "name" : "Авторизация",
+    "children" : [ {
+      "name" : "Авторизация с домашней страницы через персональный аккаунт",
+      "children" : [ {
+        "name" : "Login from home page personal account",
+        "uid" : "bc5aef40aa8abb35",
+        "parentUid" : "a909a881ad97d701aebbe876d785d2fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142414275,
+          "stop" : 1765142421631,
+          "duration" : 7356
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login from recovery page personal account",
+        "uid" : "8aea516291db9a7b",
+        "parentUid" : "a909a881ad97d701aebbe876d785d2fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142421637,
+          "stop" : 1765142425002,
+          "duration" : 3365
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a909a881ad97d701aebbe876d785d2fa"
+    }, {
+      "name" : "Проверка авторизации с разных страниц",
+      "children" : [ {
+        "name" : "Login from home page personal account",
+        "uid" : "bc5aef40aa8abb35",
+        "parentUid" : "2ff0837e18d979ba8269fd3080159a3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142414275,
+          "stop" : 1765142421631,
+          "duration" : 7356
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login from recovery page personal account",
+        "uid" : "8aea516291db9a7b",
+        "parentUid" : "2ff0837e18d979ba8269fd3080159a3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142421637,
+          "stop" : 1765142425002,
+          "duration" : 3365
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login from registration page registration",
+        "uid" : "7e278d408a834cf6",
+        "parentUid" : "2ff0837e18d979ba8269fd3080159a3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142425009,
+          "stop" : 1765142428364,
+          "duration" : 3355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login home page",
+        "uid" : "66c0901ddc3382b7",
+        "parentUid" : "2ff0837e18d979ba8269fd3080159a3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142428369,
+          "stop" : 1765142431389,
+          "duration" : 3020
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ff0837e18d979ba8269fd3080159a3a"
+    }, {
+      "name" : "Авторизация со страницы регистрации",
+      "children" : [ {
+        "name" : "Login from registration page registration",
+        "uid" : "7e278d408a834cf6",
+        "parentUid" : "117f65033de2900e2cadf85216abad44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142425009,
+          "stop" : 1765142428364,
+          "duration" : 3355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "117f65033de2900e2cadf85216abad44"
+    }, {
+      "name" : "Авторизация с домашней страницы",
+      "children" : [ {
+        "name" : "Login home page",
+        "uid" : "66c0901ddc3382b7",
+        "parentUid" : "06460c799ff22fc720390b898a4c078d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142428369,
+          "stop" : 1765142431389,
+          "duration" : 3020
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "06460c799ff22fc720390b898a4c078d"
+    }, {
+      "name" : "Авторизация с корректными данными",
+      "children" : [ {
+        "name" : "Login user with correct data",
+        "uid" : "77bc02efb92c7941",
+        "parentUid" : "4bd88147ae9c6eef2ecbfa3e30703929",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142431416,
+          "stop" : 1765142434263,
+          "duration" : 2847
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login user with correct data",
+        "uid" : "2570a7b14a55b398",
+        "parentUid" : "4bd88147ae9c6eef2ecbfa3e30703929",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142434267,
+          "stop" : 1765142437342,
+          "duration" : 3075
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4bd88147ae9c6eef2ecbfa3e30703929"
+    }, {
+      "name" : "Проверка процесса авторизации",
+      "children" : [ {
+        "name" : "Login user with correct data",
+        "uid" : "77bc02efb92c7941",
+        "parentUid" : "41e93d205162e342431301aef85a3906",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142431416,
+          "stop" : 1765142434263,
+          "duration" : 2847
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login user with correct data",
+        "uid" : "2570a7b14a55b398",
+        "parentUid" : "41e93d205162e342431301aef85a3906",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142434267,
+          "stop" : 1765142437342,
+          "duration" : 3075
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "41e93d205162e342431301aef85a3906"
+    }, {
+      "name" : "Регистрация с некорректным паролем",
+      "children" : [ {
+        "name" : "Registration user with uncorrect pass",
+        "uid" : "25dc8cb3e27387a5",
+        "parentUid" : "2f06c42f108c132458afc4f988b4244f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142437350,
+          "stop" : 1765142439657,
+          "duration" : 2307
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2f06c42f108c132458afc4f988b4244f"
+    }, {
+      "name" : "Проверка процесса авторизации с некорректными данными",
+      "children" : [ {
+        "name" : "Registration user with uncorrect pass",
+        "uid" : "25dc8cb3e27387a5",
+        "parentUid" : "af82e0cf9e4f12949df758b53b7602e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765142437350,
+          "stop" : 1765142439657,
+          "duration" : 2307
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af82e0cf9e4f12949df758b53b7602e7"
+    } ],
+    "uid" : "1c9c6c8eeff4f5d0ac53e399badbc609"
+  } ]
+}

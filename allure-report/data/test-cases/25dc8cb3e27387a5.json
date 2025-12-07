@@ -1,0 +1,173 @@
+{
+  "uid" : "25dc8cb3e27387a5",
+  "name" : "Registration user with uncorrect pass",
+  "fullName" : "ru.practicum.RegistrationUserTest.testShortPasswordErrorMessage",
+  "historyId" : "ff091b4d4c949f97de80eabe9052e209",
+  "time" : {
+    "start" : 1765142437350,
+    "stop" : 1765142439657,
+    "duration" : 2307
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открытие страницы регистрации",
+      "time" : {
+        "start" : 1765142438244,
+        "stop" : 1765142438891,
+        "duration" : 647
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Заполнение поля Имя",
+      "time" : {
+        "start" : 1765142438892,
+        "stop" : 1765142438986,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "2nzFA"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Заполнение поля электронной почты",
+      "time" : {
+        "start" : 1765142438986,
+        "stop" : 1765142439091,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "1765142438243@mail.ru"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Заполнение поля пароля",
+      "time" : {
+        "start" : 1765142439091,
+        "stop" : 1765142439163,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "pPIdq"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по кнопке регистрации",
+      "time" : {
+        "start" : 1765142439163,
+        "stop" : 1765142439446,
+        "duration" : 283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверка корректности текста ошибки",
+      "time" : {
+        "start" : 1765142439446,
+        "stop" : 1765142439488,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.practicum"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.practicum.RegistrationUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testShortPasswordErrorMessage"
+  }, {
+    "name" : "suite",
+    "value" : "ru.practicum.RegistrationUserTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0Q0VPUNE"
+  }, {
+    "name" : "thread",
+    "value" : "16028@LAPTOP-0Q0VPUNE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Регистрация с некорректным паролем"
+  }, {
+    "name" : "epic",
+    "value" : "Авторизация"
+  }, {
+    "name" : "feature",
+    "value" : "Проверка процесса авторизации с некорректными данными"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "25dc8cb3e27387a5.json",
+  "parameterValues" : [ ]
+}
