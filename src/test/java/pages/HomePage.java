@@ -19,12 +19,12 @@ public class HomePage {
     public static final By LOCATOR_BUTTON_LOGIN_TO_ACCOUNT = By.cssSelector("button.button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_large__G21Vg");
 
     // Локаторы для разделов
-    private static final By LOCATOR_BUNS_SECTION = By.xpath("//div[contains(@class, 'tab_tab__1SPyG')]//span[text()='Булки']/parent::div");
     private static final By LOCATOR_SAUCES_SECTION = By.xpath("//div[contains(@class, 'tab_tab__1SPyG')]//span[text()='Соусы']/parent::div");
     private static final By LOCATOR_FILLINGS_SECTION = By.xpath("//div[contains(@class, 'tab_tab__1SPyG')]//span[text()='Начинки']/parent::div");
 
     // Локатор для активного раздела
     private static final By LOCATOR_ACTIVE_SECTION = By.cssSelector(".tab_tab__1SPyG.tab_tab_type_current__2BEPc");
+    private static final By LOCATOR_ACTIVE_SECTION_TEXT = By.tagName("span");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -63,7 +63,7 @@ public class HomePage {
     public String getActiveSectionText() {
         try {
             WebElement activeSection = driver.findElement(LOCATOR_ACTIVE_SECTION);
-            return activeSection.findElement(By.tagName("span")).getText();
+            return activeSection.findElement(LOCATOR_ACTIVE_SECTION_TEXT).getText();
         } catch (Exception e) {
             return "Активный раздел не найден";
         }

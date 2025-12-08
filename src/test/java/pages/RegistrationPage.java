@@ -11,7 +11,6 @@ import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static pages.HomePage.HOME_PAGE_ADDRESS;
 import static pages.LoginPage.LOGIN_PAGE_ADDRESS;
 
 public class RegistrationPage {
@@ -24,7 +23,6 @@ public class RegistrationPage {
     private static final By LOCATOR_PASSWORD_FIELD = By.cssSelector("input[name='Пароль']");
     private static final By LOCATOR_BUTTON_REGISTRATION = By.cssSelector("button.button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_medium__3zxIa");
     private static final By LOCATOR_ANY_ERROR = By.cssSelector("p.input__error.text_type_main-default");
-    //private static final By LOCATOR_LINK_LOGIN = By.cssSelector("a.Auth_link__1fOlj[href*='login']");
     private static final By LOCATOR_LINK_LOGIN = By.cssSelector("a.Auth_link__1fOlj");
     private static final String TEXTERRORPASSWORD = "Некорректный пароль";
 
