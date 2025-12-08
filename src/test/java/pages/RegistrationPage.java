@@ -31,7 +31,7 @@ public class RegistrationPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // Открываем  страницу регистрации
+    // Открываем страницу регистрации
     @Step("Открытие страницы регистрации")
     public void openRegPage() {
         driver.get(REGISTRATION_PAGE_ADDRESS);
